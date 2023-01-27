@@ -11,11 +11,12 @@ namespace SLNClinica.Models
 
         //Tarea2
 
-        //Modelo:
-        //Medico
-        //Id
-        //Nombre
-        //Apellido
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
+        public int Matricula { get; set; }
+        
+     
         //Matricula
 
         //Tarea2
