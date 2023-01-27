@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 
 namespace SLNClinica.Models
 {
@@ -12,17 +13,15 @@ namespace SLNClinica.Models
         //Tarea2
 
         public int Id { get; set; }
+        [Required(ErrorMessage = "Nombre es un campo obligatorio")]
         public string Nombre { get; set; }
-        public string Apellido { get; set; }
-        public int Matricula { get; set; }
-        
-     
-        //Matricula
 
-        //Tarea2
-        //Usar validaciones
-        //Nombre y Apellido campos obligatorios
-        //Matrícula → AA1111
+        [Required(ErrorMessage = "Apellido es un campo obligatorio")]
+        public string Apellido { get; set; }
+
+        [RegularExpression("^[a-zA-Z]{2}\\d{4}$")]//dsp lo vemos
+        public int Matricula { get; set; }
+
 
         //Tarea 3 
         //Crear DB: DBClinicaMVC
