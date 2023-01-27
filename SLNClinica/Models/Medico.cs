@@ -22,18 +22,5 @@ namespace SLNClinica.Models
         [RegularExpression("^[a-zA-Z]{2}\\d{4}$")]//dsp lo vemos
         public int Matricula { get; set; }
 
-
-        //Tarea 3 
-        //Crear DB: DBClinicaMVC
-
-        //Tarea 4
-        //Programar el controller
-
-        //Index()
-        //Create()
-        //Delete()
-        //Details()
-        //Edit()
-
     }
 }
