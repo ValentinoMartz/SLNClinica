@@ -55,7 +55,7 @@ namespace SLNClinica.Controllers
             }
             else
             {
-                return View("Detalle", medico);
+                return View("Details", medico);
             }
         }
 
@@ -116,8 +116,6 @@ namespace SLNClinica.Controllers
                 return RedirectToAction("Index");
             }
         }
-
-
 
         private Medico TraerUno(int id)
         {

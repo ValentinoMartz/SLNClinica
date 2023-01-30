@@ -19,8 +19,8 @@ namespace SLNClinica.Models
         [Required(ErrorMessage = "Apellido es un campo obligatorio")]
         public string Apellido { get; set; }
 
-        [RegularExpression("^[a-zA-Z]{2}\\d{4}$")]//dsp lo vemos
-        public int Matricula { get; set; }
+        [RegularExpression(@"[A-Z]{2}[0-9]{4}")]//dsp lo vemos
+        public string Matricula { get; set; }
 
     }
 }
