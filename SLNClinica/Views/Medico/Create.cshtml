@@ -1,14 +1,9 @@
 ﻿@model SLNClinica.Models.Medico
 
-<!DOCTYPE html>
+@{
+    ViewData["Title"] = "Crear Medico";
+}
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Create</title>
-</head>
-
-<body>
     <h1>Ingresar un nuevo medico</h1>
     @using (Html.BeginForm("Create", "Medico", FormMethod.Post))
     {
@@ -33,5 +28,3 @@
         <input type="submit" action="Create"/>
         @Html.ActionLink("Volver al Index", "Index", "Medico")
     }
-</body>
-</html>

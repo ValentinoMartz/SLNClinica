@@ -1,14 +1,10 @@
 ﻿
 @model IEnumerable<SLNClinica.Models.Medico>
 
-<!DOCTYPE html>
+@{
+    ViewData["Title"] = "Index Clinica";
+}
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
     @Html.ActionLink("Nuevo", "Create", "Medico")
     
 
@@ -43,5 +39,4 @@
         }
 
     </table>
-</body>
-</html>
+

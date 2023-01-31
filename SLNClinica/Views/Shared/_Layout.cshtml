@@ -1,0 +1,55 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/css/main.css" rel="stylesheet" type="text/css" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div id="header">
+        <h1>Proyecto MVC Clinica</h1>
+    </div>
+
+    <div id="main">
+        <aside id="sidebar1">
+            @if (IsSectionDefined("SideBar"))
+            {
+                @RenderSection("SideBar")
+            }
+            else
+            {
+                <p>
+                    La "Clinica MVC" es el centro
+                    pediátrico de referencia en salud pública, gratuita
+                    y de alta complejidad de la Argentina.
+                </p>
+            }
+        </aside>
+        <div class="content">
+            @RenderBody()
+        </div>
+        <aside id="sidebar2">
+            @if (IsSectionDefined("SideBar2"))
+            {
+                @RenderSection("SideBar2")
+            }
+            else
+            {
+                <p>
+                    Dirección: Pichincha 1890, C1245 CABA<br/>
+                    Horas: Abierto las 24 horas<br/>
+                    Teléfono: 011 4122-6000<br />
+                    Fundación: 25 de agosto de 1987<br/>
+                    Especialidad: Alta complejidad pediátrica<br/>
+                </p>
+            }
+        </aside>
+    </div>
+
+    <div id="footer">
+        <h2>Bootcamp Accenture 2023</h2>
+    </div>
+</body>
+</html>

@@ -11,5 +11,6 @@ namespace SLNClinica.Controllers
             ViewBag.Fecha = DateTime.Now.ToString();
             return View();
         }
+
     }
 }
